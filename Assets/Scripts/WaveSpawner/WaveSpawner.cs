@@ -74,17 +74,21 @@ public class WaveSpawner : MonoBehaviour
             currWave++;
             waveState = WaveState.Inactive;
             WaveChange?.Invoke(this, EventArgs.Empty);
-            //GenerateWave();
         }
     }
 
     public void GenerateWave()
     {
-        waveValue = currWave * 10;
+        waveValue = currWave * 5;
 
         GenerateEnemies();
 
         spawnInterval = waveDuration / (float)enemiesToSpawn.Count;
+        if(spawnInterval <= 0.5f)
+        {
+            spawnInterval = 0.5f;
+        }
+
         waveTimer = waveDuration;
 
     }
