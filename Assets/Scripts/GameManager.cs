@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator StartNextWave()
     {
+        if(waveSpawner.currWave > 1)
+            waveText.text = "Wave: Starting Next Wave!";
         yield return new WaitForSeconds(3);
         Debug.Log("Starting next wave");
         waveSpawner.GenerateWave();

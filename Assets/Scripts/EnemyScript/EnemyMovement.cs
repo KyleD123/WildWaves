@@ -9,6 +9,8 @@ public class EnemyMovement : MonoBehaviour
 
     public float speed = 5;
 
+    private SpriteRenderer spriteRenderer;
+
     public enum enemyState
     {
         active,
@@ -44,4 +46,6 @@ public class EnemyMovement : MonoBehaviour
         }
         
     }
+
+
 }
