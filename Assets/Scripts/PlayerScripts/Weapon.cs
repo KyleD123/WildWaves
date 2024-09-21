@@ -16,7 +16,7 @@ public class Weapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        numShots = 5;
+
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class Weapon : MonoBehaviour
     public void Shoot(float x, float y)
     {
         if (numShots <= 0) return;
-        Debug.Log(numShots);
+
         GameObject bullet = Instantiate(bulletPref, transform.position, transform.rotation);
 
         if (Mathf.Abs(x) > Mathf.Abs(y))
