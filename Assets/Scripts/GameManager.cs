@@ -2,14 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public WaveSpawner waveSpawner;
+    public GameObject retryBtn;
+    public TMP_Text waveText;
+
+    private int waveRecord;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        waveText.text = "Wave: " + waveSpawner.currWave;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().playerDead += OnPlayerDead;
         waveSpawner.WaveChange += ws_OnWaveChange;
         StartCoroutine("StartNextWave");
     }
@@ -24,7 +33,19 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         Debug.Log("Starting next wave");
         waveSpawner.GenerateWave();
+        waveText.text = "Wave: " + waveSpawner.currWave;
         waveSpawner.waveState = WaveSpawner.WaveState.Active;
+    }
+
+    public void OnPlayerDead(object sender, EventArgs e)
+    {
+        retryBtn.SetActive(true);
+    }
+
+    public void Retry()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
     }
 
     // Update is called once per frame

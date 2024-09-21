@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|c:\\users\\3d animation 2024\\desktop\\gamejamgame\\wildwaves\\assets\\scripts\\enemyscript\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscript\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\assets\\scripts\\wavespawner\\wavespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wavespawner\\wavespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\assets\\scripts\\playerscripts\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscripts\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|c:\\users\\3d animation 2024\\desktop\\gamejamgame\\wildwaves\\assets\\scripts\\playerscripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\assets\\scripts\\enemyscript\\enemywavetracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +21,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\assets\\scripts\\playerscripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\assets\\scripts\\playerscripts\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscripts\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|c:\\users\\3d animation 2024\\desktop\\gamejamgame\\wildwaves\\assets\\scripts\\enemyscript\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71656843-3F82-9F81-DE04-7A01B147876A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscript\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\PlayerScripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerScripts\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\PlayerScripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerScripts\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T17:57:50.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\PlayerScripts\\Weapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerScripts\\Weapon.cs",
+              "ToolTip": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\PlayerScripts\\Weapon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerScripts\\Weapon.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T01:48:18.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\PlayerScripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerScripts\\Bullet.cs",
@@ -46,24 +76,25 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerScripts\\Bullet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T17:09:36.826Z"
+              "WhenOpened": "2024-09-21T17:09:36.826Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "EnemyMovement.cs",
               "DocumentMoniker": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\EnemyScript\\EnemyMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScript\\EnemyMovement.cs",
               "ToolTip": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\EnemyScript\\EnemyMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyScript\\EnemyMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T17:04:24.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "enemyWaveTracker.cs",
               "DocumentMoniker": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\EnemyScript\\enemyWaveTracker.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScript\\enemyWaveTracker.cs",
@@ -71,19 +102,7 @@
               "RelativeToolTip": "Assets\\Scripts\\EnemyScript\\enemyWaveTracker.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T16:59:10.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T16:34:46.073Z",
+              "WhenOpened": "2024-09-21T16:59:10.089Z",
               "EditorCaption": ""
             },
             {
@@ -94,22 +113,22 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\WaveSpawner\\WaveSpawner.cs",
               "ToolTip": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\WaveSpawner\\WaveSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\WaveSpawner\\WaveSpawner.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAiwCQAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T02:23:33.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Weapon.cs",
-              "DocumentMoniker": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\PlayerScripts\\Weapon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerScripts\\Weapon.cs",
-              "ToolTip": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\PlayerScripts\\Weapon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerScripts\\Weapon.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\3D Animation 2024\\Desktop\\GameJamGame\\WildWaves\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T01:48:18.473Z",
+              "WhenOpened": "2024-09-21T16:34:46.073Z",
               "EditorCaption": ""
             }
           ]
