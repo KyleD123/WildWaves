@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+
     public GameObject bulletPref;
 
     public float bulletSpeed;
     private float lastFire;
     public float fireDelay;
 
+    private int numShots;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        numShots = 5;
     }
 
     // Update is called once per frame
@@ -33,10 +35,11 @@ public class Weapon : MonoBehaviour
 
     public void Shoot(float x, float y)
     {
-        Debug.Log("Shot");
+        if (numShots <= 0) return;
+        Debug.Log(numShots);
         GameObject bullet = Instantiate(bulletPref, transform.position, transform.rotation);
 
-        if(Mathf.Abs(x) > Mathf.Abs(y))
+        if (Mathf.Abs(x) > Mathf.Abs(y))
         {
             y = 0;
         }
@@ -45,7 +48,13 @@ public class Weapon : MonoBehaviour
             x = 0;
         }
 
-        bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(x,y).normalized * bulletSpeed;
+        bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(x, y).normalized * bulletSpeed;
+        numShots--;
+    }
+
+    public void SetNumShots(int num)
+    {
+        numShots = num;
     }
 
 }
