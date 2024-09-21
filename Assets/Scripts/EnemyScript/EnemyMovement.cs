@@ -34,6 +34,14 @@ public class EnemyMovement : MonoBehaviour
     {
         if (state == enemyState.inactive) return;
 
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        if(transform.position.y > 0 || transform.position.y < 0)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, (speed/2f) * Time.deltaTime);
+        }
+        else
+        {
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        }
+        
     }
 }

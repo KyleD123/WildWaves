@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public WaveSpawner waveSpawner;
     public GameObject retryBtn;
     public TMP_Text waveText;
+    public TMP_Text bulletText;
 
     private int waveRecord;
 
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waveText.text = "Wave: " + waveSpawner.currWave;
+        waveText.text = "Wave: Starting!";
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().playerDead += OnPlayerDead;
         waveSpawner.WaveChange += ws_OnWaveChange;
         StartCoroutine("StartNextWave");
@@ -51,6 +52,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(waveSpawner.waveState == WaveSpawner.WaveState.Active)
+        {
+            bulletText.text = "" + GameObject.FindGameObjectWithTag("Player").GetComponent<Weapon>().numShots;
+        }
     }
 }

@@ -11,7 +11,7 @@ public class Weapon : MonoBehaviour
     private float lastFire;
     public float fireDelay;
 
-    private int numShots;
+    public int numShots;
 
     // Start is called before the first frame update
     void Start()
