@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public WaveSpawner waveSpawner;
     public GameObject retryBtn;
+    public GameObject quitBtn;
     public TMP_Text waveText;
     public TMP_Text bulletText;
 
@@ -34,7 +35,6 @@ public class GameManager : MonoBehaviour
         if(waveSpawner.currWave > 1)
             waveText.text = "Wave: Starting Next Wave!";
         yield return new WaitForSeconds(3);
-        Debug.Log("Starting next wave");
         waveSpawner.GenerateWave();
         waveText.text = "Wave: " + waveSpawner.currWave;
         waveSpawner.waveState = WaveSpawner.WaveState.Active;
@@ -43,12 +43,18 @@ public class GameManager : MonoBehaviour
     public void OnPlayerDead(object sender, EventArgs e)
     {
         retryBtn.SetActive(true);
+        quitBtn.SetActive(true);
     }
 
     public void Retry()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
+    }
+
+    public void Quit()
+    {
+        SceneManager.LoadScene("Title");
     }
 
     // Update is called once per frame

@@ -55,8 +55,8 @@ public class WaveSpawner : MonoBehaviour
                 enemiesToSpawn.RemoveAt(0);
                 spawnedEnemies.Add(enemy);
                 spawnTimer = spawnInterval;
-                spawnIndex = (spawnIndex + 1) % spawnPoints.Length;
-
+                //spawnIndex = (spawnIndex + 1) % spawnPoints.Length;
+                spawnIndex = UnityEngine.Random.Range(0, spawnPoints.Length);
             }
             else
             {
@@ -84,9 +84,9 @@ public class WaveSpawner : MonoBehaviour
         GenerateEnemies();
 
         spawnInterval = waveDuration / (float)enemiesToSpawn.Count;
-        if(spawnInterval <= 0.5f)
+        if(spawnInterval <= 0.4f)
         {
-            spawnInterval = 0.5f;
+            spawnInterval = 0.4f;
         }
 
         waveTimer = waveDuration;
