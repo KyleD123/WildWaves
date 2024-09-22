@@ -26,6 +26,7 @@ public class EnemyMovement : MonoBehaviour
         state = enemyState.active;
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().playerDead += OnPlayerDead;
         animator = GetComponent<Animator>();
+        SetAnimeDirection(transform.position.x, transform.position.y);
     }
 
     public void OnPlayerDead(object sender, EventArgs e)
@@ -40,13 +41,11 @@ public class EnemyMovement : MonoBehaviour
 
         if(transform.position.y > 0 || transform.position.y < 0)
         {
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, (speed/2f) * Time.deltaTime);
-            SetAnimeDirection(0, transform.position.y);
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, (speed/2f) * Time.deltaTime);   
         }
         else
         {
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-            SetAnimeDirection(transform.position.x, 0);
         }
         
     }
