@@ -73,6 +73,7 @@ public class WaveSpawner : MonoBehaviour
         {
             currWave++;
             waveState = WaveState.Inactive;
+            Debug.Log("invoking wave change");
             WaveChange?.Invoke(this, EventArgs.Empty);
         }
     }

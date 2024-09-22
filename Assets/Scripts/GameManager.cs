@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviour
     public TMP_Text bulletText;
     public GameObject nextWaveImage;
 
+    public GameObject makeImage;
+    public GameObject itImage;
+    public GameObject countImage;
+    public GameObject inputImage;
+
     private int waveRecord;
 
 
@@ -24,15 +29,30 @@ public class GameManager : MonoBehaviour
     {
         if(!MusicManager.instance.IsMusicPlaying())
             MusicManager.instance.StartMusic();
-        waveText.text = "Wave  Starting!";
+        waveText.text = "Wave";
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().playerDead += OnPlayerDead;
         waveSpawner.WaveChange += ws_OnWaveChange;
-        StartCoroutine("StartNextWave");
+        StartCoroutine("makeItCount");
     }
 
     public void ws_OnWaveChange(object sender, EventArgs e)
     {
         StartCoroutine("StartNextWave");
+    }
+
+    IEnumerator makeItCount()
+    {
+        inputImage.SetActive(true);
+        makeImage.SetActive(true);
+        yield return new WaitForSeconds(1);
+        makeImage.SetActive(false);
+        itImage.SetActive(true);
+        yield return new WaitForSeconds(1);
+        itImage.SetActive(false);
+        countImage.SetActive(true);
+        yield return new WaitForSeconds(1);
+        countImage.SetActive(false);
+        inputImage.SetActive(false);
     }
 
     IEnumerator StartNextWave()
@@ -44,6 +64,7 @@ public class GameManager : MonoBehaviour
         }
         yield return new WaitForSeconds(3);
         nextWaveImage.SetActive(false);
+        Debug.Log("Wave Started From GM");
         waveSpawner.GenerateWave();
         waveText.text = "Wave  " + waveSpawner.currWave;
         waveSpawner.waveState = WaveSpawner.WaveState.Active;
