@@ -15,10 +15,12 @@ public class Weapon : MonoBehaviour
 
     public int numShots;
 
+    private Animator anime;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        anime = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,7 +41,7 @@ public class Weapon : MonoBehaviour
     {
         if (numShots <= 0) return;
 
-        GameObject bullet = Instantiate(bulletPref, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(bulletPref, transform.position + new Vector3(0, -0.2f, 0), transform.rotation);
         SpriteRenderer bSR = bullet.GetComponent<SpriteRenderer>();
         
         if (Mathf.Abs(x) > Mathf.Abs(y))
@@ -67,6 +69,9 @@ public class Weapon : MonoBehaviour
         {
             bSR.sprite = sprites[1];
         }
+
+        anime.SetFloat("Horizontal", x);
+        anime.SetFloat("Vertical", y);
 
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(x, y).normalized * bulletSpeed;
         numShots--;
