@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour
     public WaveSpawner waveSpawner;
     public GameObject retryBtn;
     public GameObject quitBtn;
+    public GameObject gameOverBox;
     public TMP_Text waveText;
+    public TMP_Text gameOverWaveText;
     public TMP_Text bulletText;
 
     private int waveRecord;
@@ -21,7 +23,7 @@ public class GameManager : MonoBehaviour
     {
         if(!MusicManager.instance.IsMusicPlaying())
             MusicManager.instance.StartMusic();
-        waveText.text = "Wave: Starting!";
+        waveText.text = "Wave  Starting!";
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().playerDead += OnPlayerDead;
         waveSpawner.WaveChange += ws_OnWaveChange;
         StartCoroutine("StartNextWave");
@@ -35,10 +37,10 @@ public class GameManager : MonoBehaviour
     IEnumerator StartNextWave()
     {
         if(waveSpawner.currWave > 1)
-            waveText.text = "Wave: Starting Next Wave!";
+            waveText.text = "Wave";
         yield return new WaitForSeconds(3);
         waveSpawner.GenerateWave();
-        waveText.text = "Wave: " + waveSpawner.currWave;
+        waveText.text = "Wave  " + waveSpawner.currWave;
         waveSpawner.waveState = WaveSpawner.WaveState.Active;
     }
 
@@ -47,6 +49,10 @@ public class GameManager : MonoBehaviour
         MusicManager.instance.PlayerDeadSound();
         retryBtn.SetActive(true);
         quitBtn.SetActive(true);
+        gameOverBox.SetActive(true);
+        gameOverWaveText.gameObject.SetActive(true);
+        gameOverWaveText.text = waveText.text;
+        waveText.gameObject.SetActive(false);
     }
 
     public void Retry()

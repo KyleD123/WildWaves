@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     public float speed = 5;
 
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
 
     public enum enemyState
     {
@@ -24,6 +25,7 @@ public class EnemyMovement : MonoBehaviour
     {
         state = enemyState.active;
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().playerDead += OnPlayerDead;
+        animator = GetComponent<Animator>();
     }
 
     public void OnPlayerDead(object sender, EventArgs e)
@@ -39,12 +41,20 @@ public class EnemyMovement : MonoBehaviour
         if(transform.position.y > 0 || transform.position.y < 0)
         {
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, (speed/2f) * Time.deltaTime);
+            SetAnimeDirection(0, transform.position.y);
         }
         else
         {
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+            SetAnimeDirection(transform.position.x, 0);
         }
         
+    }
+
+    public void SetAnimeDirection(float x, float y)
+    {
+        animator.SetFloat("Horizontal", -x);
+        animator.SetFloat("Vertical", -y);
     }
 
 
