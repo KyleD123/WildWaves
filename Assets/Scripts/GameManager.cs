@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text waveText;
     public TMP_Text gameOverWaveText;
     public TMP_Text bulletText;
+    public GameObject nextWaveImage;
 
     private int waveRecord;
 
@@ -36,9 +37,13 @@ public class GameManager : MonoBehaviour
 
     IEnumerator StartNextWave()
     {
-        if(waveSpawner.currWave > 1)
+        if (waveSpawner.currWave > 1)
+        { 
             waveText.text = "Wave";
+            nextWaveImage.SetActive(true);
+        }
         yield return new WaitForSeconds(3);
+        nextWaveImage.SetActive(false);
         waveSpawner.GenerateWave();
         waveText.text = "Wave  " + waveSpawner.currWave;
         waveSpawner.waveState = WaveSpawner.WaveState.Active;
