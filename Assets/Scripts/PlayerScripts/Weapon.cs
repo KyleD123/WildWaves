@@ -17,10 +17,13 @@ public class Weapon : MonoBehaviour
 
     private Animator anime;
 
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         anime = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -72,7 +75,8 @@ public class Weapon : MonoBehaviour
 
         anime.SetFloat("Horizontal", x);
         anime.SetFloat("Vertical", y);
-
+        audioSource.Play();
+        
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(x, y).normalized * bulletSpeed;
         numShots--;
     }

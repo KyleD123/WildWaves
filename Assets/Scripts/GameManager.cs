@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(!MusicManager.instance.IsMusicPlaying())
+            MusicManager.instance.StartMusic();
         waveText.text = "Wave: Starting!";
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().playerDead += OnPlayerDead;
         waveSpawner.WaveChange += ws_OnWaveChange;
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     public void OnPlayerDead(object sender, EventArgs e)
     {
+        MusicManager.instance.PlayerDeadSound();
         retryBtn.SetActive(true);
         quitBtn.SetActive(true);
     }
@@ -54,6 +57,7 @@ public class GameManager : MonoBehaviour
 
     public void Quit()
     {
+        MusicManager.instance.StopMusic();
         SceneManager.LoadScene("Title");
     }
 
